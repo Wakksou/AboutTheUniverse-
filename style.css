@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    height: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid grey; /* Bordure grise */
+}
+
+.header h1 {
+    font-size: 36px;
+    color: yellow;
+    font-family: 'Star Wars', sans-serif;
+    margin-left: 1%;
+}
+
+.header h2 {
+    margin-left: 4%;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar {
+    width: 100px;
+    background-color: black;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    border-top: 1px solid white; /* Bordure supérieure blanche */
+    border-right: 1px solid white; /* Bordure droite blanche */
+    border-top: 4px solid;
+
+}
+
+.navbar h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50%;
+    margin-top: 20%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-left: 40%;
+}
+
+
+.content {
+    flex-grow: 1;
+    background-color: black; /* Fond noir */
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: black; /* Fond noir */
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 8px;
+    background-image: url('https://i.goopics.net/e75lc7.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre entièrement le bloc */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center;
+    margin-bottom: 10%;
+}
+
+.article2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: black; /* Fond noir */
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 8px;
+    background-image: url('https://i.goopics.net/bdi3hi.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre entièrement le bloc */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.article2 h2 {
+    font-size: 14px;
+}
+
+.chiffres {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stats {
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 4%;
+}
+
+.btn-decouvrir {
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    border: 2px solid white; /* Bordure blanche */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Bords arrondis */
+}
+
+.article .btn-decouvrir {
+    margin-top: 2%;
+    width: 5%;
+        }
+.article2 .btn-decouvrir {
+    margin-top: 4%;
+    width: 5%;
+    float: right;
+}
+
+.index {
+    margin-left: 3%;
+    text-decoration: none;
+}

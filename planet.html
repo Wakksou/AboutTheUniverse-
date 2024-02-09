@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link href="planet.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+    <h1>STAR WARS</h1>
+    <a class="index" href="index.html"><h2 style="color:hsl(189, 64%, 39%);">ACCUEIL</h2></a>
+    <h2>PROCHAINE MISSION</h2>
+</div>
+
+<div class="main">
+    <div class="navbar">
+        <a href="planet.html"><i class="fa-solid fa-globe fa-2xl" style="color: #ffffff;"></i><h2>PLAN&Egrave;TES</h2></a>
+        <a href="#"><i class="fa-solid fa-rocket fa-2xl" style="color: #ffffff;"></i><h2>V&Eacute;HICULES</h2></a>
+        <a href="#"><i class="fa-brands fa-reddit-alien fa-2xl" style="color: #ffffff;"></i><h2>PERSONNES</h2></a>
+    </div>
+    <div class="content">
+        <div class="article" style="position: relative;">
+            <h2>Plan&egrave;tes</h2>
+            <label class="custom-select">
+                <form action="">
+                    <select name="trie" id="create-listing-category-type">
+                        <option value="filtre" id="1">Population</option>
+                        <option value="filtre1" >0 &agrave; 100.000</option>
+                        <option value="filtre2" >0 &agrave; 1.000.000</option>
+                        <option value="filtre3" >+ de 100.000.000</option>
+                    </select>
+                </form>
+            </label>
+            <div class="searchbar">
+                <form action="">
+                    <input type="text" placeholder="Faites votre recherche">
+                </form>
+            </div>
+            <table class="scrollable-table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Terrain</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <p id="resultats">0 résultat(s)</p>
+        </div>
+
+        <div class="article2" style="position: relative;"> 
+            <h2 style="color:hsl(189, 64%, 39%);" id="nom">S&eacute;lectionner le contenu à afficher !</h2>
+            <div class="population-card">
+                <h2 style="color:hsl(189, 64%, 39%);">Population : </h2>
+                <p id="population"></p>
+            </div>
+            <div class="informations1">
+                <div class="logo">
+                <i class="fa-solid fa-globe fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+                <div class="diametre">
+                    <h2 style="color:hsl(189, 64%, 39%);">Diametre<p class="population"></p></h2>
+                    <p id="diametre"></p>
+                </div>
+                <div class="logo2">
+                <i class="fa-solid fa-temperature-three-quarters fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+                <div class="climat">
+                    <h2 style="color:hsl(189, 64%, 39%);">Climat<p class="population"></p></h2>
+                    <p id="climat"></p>
+                </div>
+            </div>
+            <div class="informations2">
+                
+                <div class="logo">
+                <i class="fa-solid fa-magnet fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+                <div class="gravite">
+                    <h2 style="color:hsl(189, 64%, 39%);">Gravité<p class="population"></p></h2>
+                    <p id="gravite"></p>
+                </div>
+                <div class="logo3">
+                <i class="fa-solid fa-tree fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+                <div class="terrain">
+                    <h2 style="color:hsl(189, 64%, 39%);">Terrain<p class="population"></p></h2>
+                    <p id="terrain"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+</div>
+<script src="planet.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/4d211a6a8d.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+    <h1>STAR WARS</h1>
+    <a class="index" href="index.html"><h2 style="color:hsl(189, 64%, 39%);">ACCUEIL</h2></a>
+    <h2>PROCHAINE MISSION</h2>
+</div>
+
+<div class="main">
+    <div class="navbar">
+        <a href="planet.html"><i class="fa-solid fa-globe fa-2xl" style="color: #ffffff;"></i><h2>PLAN&Egrave;TES</h2></a>
+        <a href="#"><i class="fa-solid fa-rocket fa-2xl" style="color: #ffffff;"></i><h2>V&Eacute;HICULES</h2></a>
+        <a href="#"><i class="fa-brands fa-reddit-alien fa-2xl" style="color: #ffffff;"></i><h2>PERSONNES</h2></a>
+    </div>
+
+    <div class="content">
+
+        <div class="article" style="position: relative;"> <!-- Ajout de position relative pour le positionnement absolu du bouton -->
+            <h2 style="color:hsl(189, 64%, 39%);">ABOUT THE UNIVERSE</h2>
+            <p>Bienvenue sur <span style="color:hsl(189, 64%, 39%);">ABOUT THE UNIVERSE</span> pour d&eacute;couvrir toutes nos d&eacute;couvertes à propos du monde qui nous entoure !</p>
+            <a href="#" class="btn-decouvrir">Découvrir</a> <!-- Bouton dans le bloc article -->
+        </div>
+
+        <div class="article2" style="position: relative;"> <!-- Ajout de position relative pour le positionnement absolu du bouton -->
+            <h2 style="color:hsl(189, 64%, 39%);">LES CHIFFRES</h2>
+            <p>Nous nous efforcons à archiver toutes nos trouvailles pour vous les partager autant que possible !</p>
+            <div class="chiffres">
+                <i class="fa-solid fa-people-group fa-2xl" style="color: #74C0FC;"></i>
+                <div class="stats">
+                    <h2 style="color:hsl(189, 64%, 39%);">Nombre d'êtres vivants recens&eacute;</h2>
+                    <div class="vivant"><p id="p1">44</p></div>
+                </div>
+                <i class="fa-solid fa-shuttle-space fa-2xl" style="color: #74C0FC;"></i>
+                <div class="stats">
+                    <h2 style="color:hsl(189, 64%, 39%);">Nombre de v&eacute;hicules recens&eacute;</h2>
+                    <div class="vehicule"><p id="p2">78</p></div>
+                </div>
+                <i class="fa-solid fa-globe fa-2xl" style="color: #74C0FC;"></i>
+                <div class="stats">
+                    <h2 style="color:hsl(189, 64%, 39%);">Nombre de plan&egrave;tes recens&eacute;</h2>
+                    <div class="planete"><p id="p3">50</p></div>
+                </div>
+                <i class="fa-regular fa-clock fa-2xl" style="color: #74C0FC;"></i>
+                <div class="stats">
+                    <h2 style="color:hsl(189, 64%, 39%);">Prochaine mission</h2>
+                    <div class="mission"></div><h3>10 Juin 2024</h3></div>
+                </div>
+            <div class="button">
+                <a href="#" class="btn-decouvrir">Découvrir</a> <!-- Bouton dans le bloc article2 -->
+            </div>
+        </div>
+</div>
+
+</body>
+<script src="https://kit.fontawesome.com/4d211a6a8d.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

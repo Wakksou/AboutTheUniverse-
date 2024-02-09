@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    height: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid grey; /* Bordure grise */
+}
+
+.header h1 {
+    font-size: 36px;
+    color: yellow;
+    font-family: 'Star Wars', sans-serif;
+    margin-left: 1%;
+}
+
+.header h2 {
+    margin-left: 4%;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar {
+    width: 100px;
+    background-color: black;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    border-top: 1px solid white; /* Bordure supérieure blanche */
+    border-right: 1px solid white; /* Bordure droite blanche */
+    border-top: 4px solid;
+
+}
+
+.navbar h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50%;
+    margin-top: 20%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-left: 40%;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    background-color: black; /* Fond noir */
+}
+
+.article {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: black; /* Fond noir */
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 8px;
+    background-image: url('https://i.goopics.net/ng022m.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre entièrement le bloc */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: 25% 75%;
+    margin-bottom: 10%;
+}
+
+.article2 {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: black; 
+    border: 1px solid white; 
+    border-radius: 8px;
+    background-image: url('https://i.goopics.net/bmx3uk.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    visibility: hidden;
+}
+
+.article2 h2 {
+    font-size: 14px;
+}
+
+label.custom-select {
+    position: relative;
+    display: inline-block;
+
+}
+
+.custom-select select {
+    display: inline-block;
+    padding: 4px 3px 3px 5px;
+    margin: 0;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    background: #000;
+    color:white;
+    border: 1px solid white; /* Bordure blanche */
+}
+
+/* Select arrow styling */
+.custom-select:after {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 30px;
+    padding: 0 7px;
+    background: #000;
+    color: white;
+    pointer-events: none;
+}
+
+.no-pointer-events .custom-select:after {
+    content: none;
+}
+
+.searchbar {
+    width: 100%; /* Rendre la barre de recherche plus large */
+    margin-top: 3%;
+}
+
+.searchbar input[type="text"] {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    padding: 8px 0px 8px ; /* Ajouter de l'espace pour l'icône */
+    border: 1px solid white; /* Bordure blanche */
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+}
+
+.scrollable-table {
+    border-collapse: collapse;
+    display: block;
+    height: 250px; /* Hauteur ajustée pour afficher environ 6 lignes */
+    overflow-y: auto; /* Permet le défilement vertical */
+    margin-top: 3%;
+}
+
+/* Masquer la barre de défilement sous Webkit/Blink */
+.scrollable-table::-webkit-scrollbar {
+    display: none;
+}
+
+/* Masquer la barre de défilement sous IE et Edge */
+.scrollable-table {
+    -ms-overflow-style: none;
+}
+
+.scrollable-table thead th {
+    background-color: #333;
+    color: white;
+    text-wrap: nowrap;
+    position: sticky;
+    top: 0; /* Fait en sorte que l'en-tête reste en haut */
+    z-index: 1; /* S'assure que l'en-tête reste au-dessus des autres lignes lors du défilement */
+}
+
+
+.scrollable-table th, .scrollable-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    width: 90%; /* Ajuster la largeur des colonnes */
+    text-wrap: nowrap;
+}
+
+.scrollable-table th:first-child, .scrollable-table td:first-child {
+    text-align: left; /* Aligner le texte à gauche pour la première colonne */
+}
+
+.informations1 {
+    display: flex;
+    margin-top: 5%;
+}
+
+.diametre {
+    margin-left: 2%;
+}
+
+.climat{
+    margin-left: 2%;
+}
+
+.gravite {
+    margin-left: 2%;
+}   
+
+.terrain{
+    margin-left: 2%;
+}
+
+.informations2 {
+    display: flex;
+    margin-top: 5%;
+}
+
+.logo {
+    display: flex;
+    margin-top: 6%;
+    margin-right: 2%;
+}
+
+.logo2 {
+    display: flex;
+    margin-top: 6%;
+    margin-left: 38%;
+    margin-right: 2%;
+}
+
+.logo3 {
+    display: flex;
+    margin-top: 6%;
+    margin-left: 40%;
+    margin-right: 2%;
+}
+
+.population-card{
+    display: flex;
+}
+
+#population {
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+
+
+.ligne-selectionnee {
+    background-color: blue;
+    color: white;
+    /* Autres styles pour la ligne sélectionnée */
+}
+
+.index {
+    margin-left: 3%;
+    text-decoration: none;
+}
